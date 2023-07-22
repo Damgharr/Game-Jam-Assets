@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcwcqpwt1m3fl"]
+
+[ext_resource type="Texture2D" uid="uid://d0nj1y68gl07e" path="res://assets/sprites/circle-256.png" id="1_vmr05"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n38g2"]
+radius = 18.0278
+
+[node name="Wheel" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.140625, 0.140625)
+texture = ExtResource("1_vmr05")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_n38g2")

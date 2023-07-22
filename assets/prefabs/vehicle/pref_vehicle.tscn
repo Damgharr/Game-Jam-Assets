@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://dsc2fu1jwya4w"]
+
+[ext_resource type="Script" path="res://assets/prefabs/vehicle/vehicle.gd" id="1_rh71o"]
+[ext_resource type="Texture2D" uid="uid://cvu8acgiqqs1r" path="res://assets/sprites/Solid_white.png" id="2_b5dwj"]
+[ext_resource type="PackedScene" uid="uid://bcwcqpwt1m3fl" path="res://assets/prefabs/vehicle/pref_wheel.tscn" id="2_ocxl8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gl8bl"]
+size = Vector2(64, 32)
+
+[node name="Vehicle" type="RigidBody2D"]
+position = Vector2(122, 16)
+script = ExtResource("1_rh71o")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.38419e-06, -9.53674e-07)
+scale = Vector2(0.32, 0.16)
+texture = ExtResource("2_b5dwj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gl8bl")
+
+[node name="WheelHolder" type="PinJoint2D" parent="."]
+position = Vector2(-32, 18)
+node_a = NodePath("..")
+node_b = NodePath("Wheel")
+metadata/_edit_group_ = true
+
+[node name="Wheel" parent="WheelHolder" instance=ExtResource("2_ocxl8")]
+inertia = 500.0
+
+[node name="WheelHolder2" type="PinJoint2D" parent="."]
+position = Vector2(32, 18)
+node_a = NodePath("..")
+node_b = NodePath("Wheel")
+metadata/_edit_group_ = true
+
+[node name="Wheel" parent="WheelHolder2" instance=ExtResource("2_ocxl8")]
+inertia = 500.0

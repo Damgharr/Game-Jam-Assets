@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr5ccyqedp152"]
+
+[ext_resource type="PackedScene" uid="uid://dsc2fu1jwya4w" path="res://assets/prefabs/vehicle/pref_vehicle.tscn" id="1_qhxhw"]
+[ext_resource type="Script" path="res://assets/vehicle_controller.gd" id="2_lvhk3"]
+
+[node name="Main" type="Node"]
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="World"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World/StaticBody2D"]
+position = Vector2(0, 56)
+polygon = PackedVector2Array(3, 443, 4, 218, 152, 256, 407, 257, 547, 240, 701, 170, 814, 232, 811, 439)
+
+[node name="Vehicle" parent="World" instance=ExtResource("1_qhxhw")]
+
+[node name="VehicleController" type="Node2D" parent="World/Vehicle" node_paths=PackedStringArray("_vehicle")]
+script = ExtResource("2_lvhk3")
+_vehicle = NodePath("..")

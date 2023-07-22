@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://brjjlx14grk2d"]
+
+[ext_resource type="Script" path="res://assets/service_locator/service_locator.gd" id="1_njobm"]
+
+[node name="ManagerLocator" type="Node"]
+script = ExtResource("1_njobm")
+_class = "Service"
