@@ -13,6 +13,7 @@ size = Vector2(64, 22)
 radius = 13.0
 
 [node name="Vehicle" type="RigidBody2D"]
+inertia = 50.0
 angular_damp_mode = 1
 script = ExtResource("1_rh71o")
 
@@ -34,7 +35,6 @@ softness = 0.1
 metadata/_edit_group_ = true
 
 [node name="Wheel" parent="WheelHolder" instance=ExtResource("2_ocxl8")]
-inertia = 500.0
 
 [node name="WheelHolder2" type="PinJoint2D" parent="."]
 position = Vector2(29, 12)
@@ -44,7 +44,6 @@ softness = 0.1
 metadata/_edit_group_ = true
 
 [node name="Wheel" parent="WheelHolder2" instance=ExtResource("2_ocxl8")]
-inertia = 500.0
 
 [node name="Character" type="Node2D" parent="."]
 position = Vector2(-20, -13)

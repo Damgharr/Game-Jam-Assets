@@ -1,8 +1,9 @@
-[gd_scene load_steps=52 format=3 uid="uid://dr5ccyqedp152"]
+[gd_scene load_steps=53 format=3 uid="uid://dr5ccyqedp152"]
 
 [ext_resource type="Script" path="res://assets/main.gd" id="1_h2cg6"]
 [ext_resource type="PackedScene" uid="uid://dsc2fu1jwya4w" path="res://assets/prefabs/vehicle/pref_vehicle.tscn" id="1_qhxhw"]
 [ext_resource type="Script" path="res://assets/game_camera.gd" id="1_vfvjc"]
+[ext_resource type="Texture2D" uid="uid://blhj6vc00btm8" path="res://icon.svg" id="2_p71ni"]
 [ext_resource type="Script" path="res://assets/components/vehicle_controller.gd" id="2_shv05"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/shapes/shape_closed.gd" id="3_1iqek"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/vertex_properties.gd" id="4_17e1c"]
@@ -15,46 +16,7 @@
 [ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="9_16mir"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/materials/edge_material_metadata.gd" id="10_jdf0q"]
 
-[sub_resource type="Resource" id="Resource_lftmc"]
-script = ExtResource("4_17e1c")
-texture_idx = 0
-flip = false
-width = 1.0
-
-[sub_resource type="Resource" id="Resource_oe5qk"]
-script = ExtResource("5_ptew5")
-position = Vector2(-3658.82, -1173.6)
-point_in = Vector2(0, 0)
-point_out = Vector2(0, 0)
-properties = SubResource("Resource_lftmc")
-
-[sub_resource type="Resource" id="Resource_n18eb"]
-script = ExtResource("4_17e1c")
-texture_idx = 0
-flip = false
-width = 1.0
-
-[sub_resource type="Resource" id="Resource_7jdxf"]
-script = ExtResource("5_ptew5")
-position = Vector2(88.697, -1417.73)
-point_in = Vector2(-401.546, -50.9424)
-point_out = Vector2(401.546, 50.9424)
-properties = SubResource("Resource_n18eb")
-
-[sub_resource type="Resource" id="Resource_cuc4c"]
-script = ExtResource("4_17e1c")
-texture_idx = 0
-flip = false
-width = 1.0
-
-[sub_resource type="Resource" id="Resource_l8ta1"]
-script = ExtResource("5_ptew5")
-position = Vector2(3675.78, -488.332)
-point_in = Vector2(0, 0)
-point_out = Vector2(0, 0)
-properties = SubResource("Resource_cuc4c")
-
-[sub_resource type="Resource" id="Resource_6bbh7"]
+[sub_resource type="Resource" id="Resource_bt10i"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -65,9 +27,48 @@ script = ExtResource("5_ptew5")
 position = Vector2(-3658.82, -1173.6)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_6bbh7")
+properties = SubResource("Resource_bt10i")
 
-[sub_resource type="Resource" id="Resource_ne0o3"]
+[sub_resource type="Resource" id="Resource_3g45p"]
+script = ExtResource("4_17e1c")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_oe5qk"]
+script = ExtResource("5_ptew5")
+position = Vector2(-3658.82, -1173.6)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_3g45p")
+
+[sub_resource type="Resource" id="Resource_l2ttg"]
+script = ExtResource("4_17e1c")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_7jdxf"]
+script = ExtResource("5_ptew5")
+position = Vector2(88.697, -1417.73)
+point_in = Vector2(-401.546, -50.9424)
+point_out = Vector2(401.546, 50.9424)
+properties = SubResource("Resource_l2ttg")
+
+[sub_resource type="Resource" id="Resource_01esd"]
+script = ExtResource("4_17e1c")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_l8ta1"]
+script = ExtResource("5_ptew5")
+position = Vector2(3675.78, -488.332)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_01esd")
+
+[sub_resource type="Resource" id="Resource_wgabr"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -78,9 +79,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(-3769.82, -601.792)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_ne0o3")
+properties = SubResource("Resource_wgabr")
 
-[sub_resource type="Resource" id="Resource_fp37y"]
+[sub_resource type="Resource" id="Resource_f8213"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -91,9 +92,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(-3392.74, -1608.48)
 point_in = Vector2(-353.6, 104.881)
 point_out = Vector2(353.6, -104.881)
-properties = SubResource("Resource_fp37y")
+properties = SubResource("Resource_f8213")
 
-[sub_resource type="Resource" id="Resource_3olt2"]
+[sub_resource type="Resource" id="Resource_m4eub"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -104,9 +105,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(-2673.55, -1150)
 point_in = Vector2(-434.509, -23.9729)
 point_out = Vector2(434.509, 23.9729)
-properties = SubResource("Resource_3olt2")
+properties = SubResource("Resource_m4eub")
 
-[sub_resource type="Resource" id="Resource_xc5v6"]
+[sub_resource type="Resource" id="Resource_ooofp"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -117,9 +118,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(-1582.78, -1230.91)
 point_in = Vector2(-290.672, 59.9324)
 point_out = Vector2(290.672, -59.9324)
-properties = SubResource("Resource_xc5v6")
+properties = SubResource("Resource_ooofp")
 
-[sub_resource type="Resource" id="Resource_c3dqi"]
+[sub_resource type="Resource" id="Resource_nqepf"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -130,9 +131,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(-902.552, -1605.48)
 point_in = Vector2(-296.665, 98.8882)
 point_out = Vector2(296.665, -98.8882)
-properties = SubResource("Resource_c3dqi")
+properties = SubResource("Resource_nqepf")
 
-[sub_resource type="Resource" id="Resource_woief"]
+[sub_resource type="Resource" id="Resource_hx5kk"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -143,9 +144,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(1329.93, -1587.5)
 point_in = Vector2(-152.655, -22.4492)
 point_out = Vector2(152.655, 22.4492)
-properties = SubResource("Resource_woief")
+properties = SubResource("Resource_hx5kk")
 
-[sub_resource type="Resource" id="Resource_kvu8h"]
+[sub_resource type="Resource" id="Resource_22joy"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -156,9 +157,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(1670.98, -1289.17)
 point_in = Vector2(-179.594, 40.4087)
 point_out = Vector2(228.982, -98.7767)
-properties = SubResource("Resource_kvu8h")
+properties = SubResource("Resource_22joy")
 
-[sub_resource type="Resource" id="Resource_b3at6"]
+[sub_resource type="Resource" id="Resource_qnjf0"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -169,9 +170,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(1940.37, -1702.23)
 point_in = Vector2(-170.614, 40.4086)
 point_out = Vector2(170.614, -40.4086)
-properties = SubResource("Resource_b3at6")
+properties = SubResource("Resource_qnjf0")
 
-[sub_resource type="Resource" id="Resource_7q4xw"]
+[sub_resource type="Resource" id="Resource_6t2ll"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -182,9 +183,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(2227.72, -1437.33)
 point_in = Vector2(-134.696, 17.9594)
 point_out = Vector2(134.696, -17.9594)
-properties = SubResource("Resource_7q4xw")
+properties = SubResource("Resource_6t2ll")
 
-[sub_resource type="Resource" id="Resource_mx12h"]
+[sub_resource type="Resource" id="Resource_3h3lk"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -195,9 +196,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(2510.58, -1872.85)
 point_in = Vector2(-188.574, 13.4695)
 point_out = Vector2(188.574, -13.4695)
-properties = SubResource("Resource_mx12h")
+properties = SubResource("Resource_3h3lk")
 
-[sub_resource type="Resource" id="Resource_rndmw"]
+[sub_resource type="Resource" id="Resource_hsvij"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -208,9 +209,9 @@ script = ExtResource("5_ptew5")
 position = Vector2(2806.91, -1446.31)
 point_in = Vector2(-170.614, 35.9188)
 point_out = Vector2(170.614, -35.9188)
-properties = SubResource("Resource_rndmw")
+properties = SubResource("Resource_hsvij")
 
-[sub_resource type="Resource" id="Resource_bp0y1"]
+[sub_resource type="Resource" id="Resource_yw8ct"]
 script = ExtResource("4_17e1c")
 texture_idx = 0
 flip = false
@@ -221,7 +222,7 @@ script = ExtResource("5_ptew5")
 position = Vector2(3188.55, -2110.81)
 point_in = Vector2(-296.33, 62.8579)
 point_out = Vector2(296.33, -62.8579)
-properties = SubResource("Resource_bp0y1")
+properties = SubResource("Resource_yw8ct")
 
 [sub_resource type="Resource" id="Resource_qsydo"]
 script = ExtResource("6_xfqm7")
@@ -291,7 +292,6 @@ render_offset = 0.0
 script = ExtResource("1_h2cg6")
 
 [node name="UI" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="TimeCounter" type="Label" parent="UI"]
 anchors_preset = 15
@@ -303,6 +303,7 @@ theme_override_font_sizes/font_size = 85
 text = "2425"
 
 [node name="MainMenu" type="Control" parent="UI"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -345,24 +346,25 @@ alignment = 1
 [node name="Button" type="Button" parent="UI/MainMenu/Menu/Panel/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
-text = "Play"
+text = "PLAY"
 
 [node name="Button2" type="Button" parent="UI/MainMenu/Menu/Panel/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
-text = "Select Level"
+text = "SELECT_LEVEL"
 
 [node name="Button3" type="Button" parent="UI/MainMenu/Menu/Panel/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
-text = "Settings"
+text = "SETTINGS"
 
 [node name="Button4" type="Button" parent="UI/MainMenu/Menu/Panel/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 25
-text = "Exit"
+text = "EXIT"
 
-[node name="LevelMenu" type="Control" parent="UI/MainMenu"]
+[node name="LevelsMenu" type="Control" parent="UI/MainMenu"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -370,7 +372,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="UI/MainMenu/LevelMenu"]
+[node name="Panel" type="Panel" parent="UI/MainMenu/LevelsMenu"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -379,56 +381,447 @@ offset_left = 512.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TabContainer" type="TabContainer" parent="UI/MainMenu/LevelMenu/Panel"]
+[node name="TabContainer" type="TabContainer" parent="UI/MainMenu/LevelsMenu/Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+tab_alignment = 1
 
-[node name="AREA_1" type="TabBar" parent="UI/MainMenu/LevelMenu/Panel/TabContainer"]
+[node name="AREA_1" type="TabBar" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer"]
 layout_mode = 2
 
-[node name="GridContainer" type="GridContainer" parent="UI/MainMenu/LevelMenu/Panel/TabContainer/AREA_1"]
+[node name="MarginContainer" type="MarginContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="GridContainer" type="GridContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 210
+theme_override_constants/v_separation = 230
 columns = 3
 
-[node name="AREA_2" type="TabBar" parent="UI/MainMenu/LevelMenu/Panel/TabContainer"]
+[node name="LevelCard" type="Control" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer/LevelCard"]
+layout_mode = 2
+offset_right = 167.0
+offset_bottom = 230.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer/LevelCard/VBoxContainer"]
+self_modulate = Color(1, 0.0313726, 0.54902, 1)
+layout_mode = 2
+texture = ExtResource("2_p71ni")
+
+[node name="Label" type="Label" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer/LevelCard/VBoxContainer"]
+layout_mode = 2
+text = "LEVEL_1"
+horizontal_alignment = 1
+
+[node name="LevelCard2" type="Control" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer/LevelCard2"]
+layout_mode = 2
+offset_right = 167.0
+offset_bottom = 230.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer/LevelCard2/VBoxContainer"]
+self_modulate = Color(1, 0.0313726, 0.54902, 1)
+layout_mode = 2
+texture = ExtResource("2_p71ni")
+
+[node name="Label" type="Label" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer/LevelCard2/VBoxContainer"]
+layout_mode = 2
+text = "LEVEL_2"
+horizontal_alignment = 1
+
+[node name="LevelCard3" type="Control" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer/LevelCard3"]
+layout_mode = 2
+offset_right = 167.0
+offset_bottom = 230.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer/LevelCard3/VBoxContainer"]
+self_modulate = Color(1, 0.0313726, 0.54902, 1)
+layout_mode = 2
+texture = ExtResource("2_p71ni")
+
+[node name="Label" type="Label" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_1/MarginContainer/GridContainer/LevelCard3/VBoxContainer"]
+layout_mode = 2
+text = "LEVEL_3"
+horizontal_alignment = 1
+
+[node name="AREA_2" type="TabBar" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer"]
 visible = false
 layout_mode = 2
 
-[node name="GridContainer" type="GridContainer" parent="UI/MainMenu/LevelMenu/Panel/TabContainer/AREA_2"]
+[node name="MarginContainer" type="MarginContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="GridContainer" type="GridContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 210
+theme_override_constants/v_separation = 230
 columns = 3
 
-[node name="AREA_3" type="TabBar" parent="UI/MainMenu/LevelMenu/Panel/TabContainer"]
+[node name="LevelCard" type="Control" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer/LevelCard"]
+layout_mode = 2
+offset_right = 167.0
+offset_bottom = 230.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer/LevelCard/VBoxContainer"]
+self_modulate = Color(1, 0.0313726, 0.54902, 1)
+layout_mode = 2
+texture = ExtResource("2_p71ni")
+
+[node name="Label" type="Label" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer/LevelCard/VBoxContainer"]
+layout_mode = 2
+text = "LEVEL_1"
+horizontal_alignment = 1
+
+[node name="LevelCard2" type="Control" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer/LevelCard2"]
+layout_mode = 2
+offset_right = 167.0
+offset_bottom = 230.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer/LevelCard2/VBoxContainer"]
+self_modulate = Color(1, 0.0313726, 0.54902, 1)
+layout_mode = 2
+texture = ExtResource("2_p71ni")
+
+[node name="Label" type="Label" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer/LevelCard2/VBoxContainer"]
+layout_mode = 2
+text = "LEVEL_2"
+horizontal_alignment = 1
+
+[node name="LevelCard3" type="Control" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer/LevelCard3"]
+layout_mode = 2
+offset_right = 167.0
+offset_bottom = 230.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer/LevelCard3/VBoxContainer"]
+self_modulate = Color(1, 0.0313726, 0.54902, 1)
+layout_mode = 2
+texture = ExtResource("2_p71ni")
+
+[node name="Label" type="Label" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_2/MarginContainer/GridContainer/LevelCard3/VBoxContainer"]
+layout_mode = 2
+text = "LEVEL_3"
+horizontal_alignment = 1
+
+[node name="AREA_3" type="TabBar" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer"]
 visible = false
 layout_mode = 2
 
-[node name="GridContainer" type="GridContainer" parent="UI/MainMenu/LevelMenu/Panel/TabContainer/AREA_3"]
+[node name="MarginContainer" type="MarginContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="GridContainer" type="GridContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 210
+theme_override_constants/v_separation = 230
 columns = 3
+
+[node name="LevelCard" type="Control" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer/LevelCard"]
+layout_mode = 2
+offset_right = 167.0
+offset_bottom = 230.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer/LevelCard/VBoxContainer"]
+self_modulate = Color(1, 0.0313726, 0.54902, 1)
+layout_mode = 2
+texture = ExtResource("2_p71ni")
+
+[node name="Label" type="Label" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer/LevelCard/VBoxContainer"]
+layout_mode = 2
+text = "LEVEL_1"
+horizontal_alignment = 1
+
+[node name="LevelCard2" type="Control" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer/LevelCard2"]
+layout_mode = 2
+offset_right = 167.0
+offset_bottom = 230.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer/LevelCard2/VBoxContainer"]
+self_modulate = Color(1, 0.0313726, 0.54902, 1)
+layout_mode = 2
+texture = ExtResource("2_p71ni")
+
+[node name="Label" type="Label" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer/LevelCard2/VBoxContainer"]
+layout_mode = 2
+text = "LEVEL_2"
+horizontal_alignment = 1
+
+[node name="LevelCard3" type="Control" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer/LevelCard3"]
+layout_mode = 2
+offset_right = 167.0
+offset_bottom = 230.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer/LevelCard3/VBoxContainer"]
+self_modulate = Color(1, 0.0313726, 0.54902, 1)
+layout_mode = 2
+texture = ExtResource("2_p71ni")
+
+[node name="Label" type="Label" parent="UI/MainMenu/LevelsMenu/Panel/TabContainer/AREA_3/MarginContainer/GridContainer/LevelCard3/VBoxContainer"]
+layout_mode = 2
+text = "LEVEL_3"
+horizontal_alignment = 1
+
+[node name="SettingsMenu" type="Control" parent="UI/MainMenu"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="UI/MainMenu/SettingsMenu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 512.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="UI/MainMenu/SettingsMenu/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GENERAL" type="TabBar" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="GridContainer" type="GridContainer" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 295
+columns = 2
+
+[node name="Parametr" type="Control" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL/MarginContainer/GridContainer/Parametr"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL/MarginContainer/GridContainer/Parametr/HBoxContainer"]
+layout_mode = 2
+text = "USELESS_CHECK"
+
+[node name="CheckButton" type="CheckButton" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL/MarginContainer/GridContainer/Parametr/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL/MarginContainer/GridContainer/Parametr"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Parametr2" type="Control" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL/MarginContainer/GridContainer/Parametr2"]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 46.0
+
+[node name="Label" type="Label" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL/MarginContainer/GridContainer/Parametr2/VBoxContainer"]
+layout_mode = 2
+text = "USELESS_CHECK"
+
+[node name="HSlider" type="HSlider" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/GENERAL/MarginContainer/GridContainer/Parametr2/VBoxContainer"]
+layout_mode = 2
+
+[node name="VIDEO" type="TabBar" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="AUDIO" type="TabBar" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/AUDIO"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="GridContainer" type="GridContainer" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/AUDIO/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 295
+columns = 2
+
+[node name="Parametr" type="Control" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/AUDIO/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/AUDIO/MarginContainer/GridContainer/Parametr"]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 62.0
+
+[node name="Label" type="Label" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/AUDIO/MarginContainer/GridContainer/Parametr/VBoxContainer"]
+layout_mode = 2
+text = "MAIN_VOLUME"
+
+[node name="HSlider" type="HSlider" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/AUDIO/MarginContainer/GridContainer/Parametr/VBoxContainer"]
+custom_minimum_size = Vector2(150, 32)
+layout_mode = 2
+
+[node name="Parametr2" type="Control" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/AUDIO/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/AUDIO/MarginContainer/GridContainer/Parametr2"]
+layout_mode = 0
+offset_right = 256.0
+offset_bottom = 62.0
+
+[node name="Label" type="Label" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/AUDIO/MarginContainer/GridContainer/Parametr2/VBoxContainer"]
+layout_mode = 2
+text = "MUSIC_VOLUME"
+
+[node name="HSlider" type="HSlider" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer/AUDIO/MarginContainer/GridContainer/Parametr2/VBoxContainer"]
+custom_minimum_size = Vector2(150, 32)
+layout_mode = 2
+
+[node name="CREDITS" type="TabBar" parent="UI/MainMenu/SettingsMenu/Panel/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="ExitMenu" type="Control" parent="UI/MainMenu"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="UI/MainMenu/ExitMenu"]
+layout_mode = 0
+offset_left = -192.0
+offset_top = -108.0
+offset_right = 192.0
+offset_bottom = 120.0
+metadata/_edit_group_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/MainMenu/ExitMenu/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 45
+theme_override_constants/margin_top = 45
+theme_override_constants/margin_right = 45
+theme_override_constants/margin_bottom = 45
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MainMenu/ExitMenu/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="UI/MainMenu/ExitMenu/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "EXIT_MESSAGE_WARNING"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="UI/MainMenu/ExitMenu/Panel/MarginContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/MainMenu/ExitMenu/Panel/MarginContainer/VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="Button" type="Button" parent="UI/MainMenu/ExitMenu/Panel/MarginContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "YES"
+
+[node name="Button2" type="Button" parent="UI/MainMenu/ExitMenu/Panel/MarginContainer/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "NO"
 
 [node name="World" type="Node2D" parent="."]
 
 [node name="GameCamera" type="Camera2D" parent="World" node_paths=PackedStringArray("_target")]
 position = Vector2(384, 216)
+offset = Vector2(100, 0)
 zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
 position_smoothing_speed = 20.0
@@ -437,7 +830,7 @@ _target = NodePath("../Vehicle")
 
 [node name="Vehicle" parent="World" instance=ExtResource("1_qhxhw")]
 position = Vector2(102, 216)
-mass = 3.0
+mass = 2.0
 metadata/_edit_group_ = true
 
 [node name="VehicleController" type="Node2D" parent="World/Vehicle" node_paths=PackedStringArray("_vehicle")]
@@ -449,7 +842,7 @@ position = Vector2(2153, 718)
 metadata/_edit_group_ = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="World/StaticBody2D"]
-polygon = PackedVector2Array(-2634.69, -426.106, -2636.1, -432.723, -2638.44, -450.578, -2638.85, -476.68, -2637.44, -491.888, -2634.49, -508.036, -2629.62, -524.749, -2622.5, -541.654, -2612.75, -558.375, -2606.79, -566.55, -2600.04, -574.54, -2592.45, -582.297, -2583.99, -589.774, -2574.6, -596.925, -2564.25, -603.703, -2540.47, -615.953, -2512.29, -626.15, -2497.6, -629.821, -2483.97, -631.854, -2471.32, -632.345, -2459.57, -631.392, -2448.66, -629.094, -2438.49, -625.548, -2428.99, -620.851, -2420.09, -615.101, -2411.7, -608.397, -2403.74, -600.835, -2388.84, -583.529, -2360.83, -542.927, -2331.09, -499.546, -2314, -478.768, -2294.6, -459.639, -2283.85, -450.937, -2272.28, -442.941, -2259.82, -435.748, -2246.39, -429.456, -2231.92, -424.162, -2216.33, -419.965, -2199.54, -416.961, -2181.46, -415.249, -2037.55, -412.535, -1905.78, -419.384, -1679.71, -452.467, -1655.66, -458.445, -1633.47, -465.92, -1612.88, -474.707, -1593.6, -484.623, -1557.93, -507.106, -1454.46, -582.536, -1413.95, -605.439, -1366.8, -624.772, -1341.22, -631.556, -1315.61, -635.082, -1289.88, -635.702, -1263.96, -633.763, -1211.26, -623.614, -1156.91, -607.435, -1040.81, -568.184, -977.858, -550.712, -910.83, -538.407, -874.75, -535.536, -836.144, -535.458, -753.566, -542.175, -582.413, -572.539, -432.727, -605.36, -376.983, -615.15, -355.819, -617.069, -347.156, -617.119, -339.864, -616.502, -333.47, -615.147, -327.438, -613.054, -321.74, -610.28, -316.35, -606.877, -311.242, -602.902, -306.39, -598.409, -297.344, -588.088, -266.07, -537.04, -250.409, -511.797, -241.831, -500.779, -237.262, -495.863, -232.471, -491.415, -227.432, -487.49, -222.119, -484.143, -216.503, -481.429, -210.561, -479.403, -204.263, -478.118, -197.585, -477.631, -190.5, -477.995, -182.982, -479.268, -173.581, -483.756, -165.093, -488.683, -157.463, -494.014, -150.634, -499.714, -144.55, -505.747, -139.157, -512.081, -134.398, -518.68, -130.218, -525.51, -123.374, -539.726, -118.177, -554.453, -104.987, -612.968, -101.364, -626.122, -96.7214, -638.135, -93.8788, -643.628, -90.6146, -648.733, -86.8732, -653.415, -82.5989, -657.639, -77.7362, -661.372, -72.2294, -664.579, -66.0228, -667.225, -59.0612, -669.277, -51.9527, -670.539, -45.3239, -670.881, -39.1457, -670.361, -36.2167, -669.796, -33.3896, -669.039, -28.0267, -666.974, -23.0284, -664.226, -18.3662, -660.854, -14.0109, -656.917, -9.93408, -652.475, -6.10657, -647.587, 0.914551, -636.711, 13.2255, -612.222, 24.7625, -587.248, 30.8153, -575.767, 37.3643, -565.59, 40.8964, -561.139, 44.6393, -557.193, 48.621, -553.809, 52.8704, -551.049, 55.1044, -549.92, 57.4163, -548.97, 59.8093, -548.205, 62.2871, -547.633, 64.8538, -547.261, 67.5123, -547.097, 70.2667, -547.148, 73.1201, -547.422, 75.9662, -547.938, 78.6986, -548.706, 81.3213, -549.718, 83.8391, -550.965, 86.2557, -552.44, 88.5754, -554.134, 90.803, -556.04, 92.9424, -558.148, 96.9734, -562.941, 100.702, -568.447, 107.391, -581.339, 128.884, -648.365, 140.283, -683.826, 147.099, -700.212, 155.023, -715.004, 159.485, -721.638, 164.325, -727.678, 169.58, -733.057, 175.281, -737.711, 181.463, -741.573, 184.745, -743.187, 188.16, -744.579, 191.712, -745.74, 195.406, -746.663, 203.235, -747.759, 207.218, -747.886, 211.036, -747.694, 214.694, -747.194, 218.199, -746.395, 221.555, -745.309, 224.766, -743.945, 227.839, -742.315, 230.779, -740.429, 233.589, -738.298, 236.276, -735.932, 241.301, -730.537, 245.893, -724.329, 250.093, -717.392, 257.481, -701.67, 263.792, -684.044, 284.8, -608.006, 290.627, -590.986, 297.337, -576.111, 301.126, -569.688, 305.258, -564.055, 307.465, -561.561, 309.774, -559.295, 312.189, -557.27, 314.715, -555.494, 317.358, -553.979, 320.122, -552.734, 323.013, -551.772, 326.036, -551.102, 329.196, -550.734, 332.497, -550.679, 335.946, -550.949, 339.547, -551.553, 343.141, -552.504, 346.569, -553.801, 349.838, -555.434, 352.955, -557.391, 355.926, -559.661, 358.758, -562.234, 361.458, -565.099, 364.032, -568.245, 368.832, -575.335, 373.211, -583.419, 380.918, -602.218, 405.638, -699.74, 420.345, -752.156, 429.79, -776.842, 441.201, -799.586, 447.778, -810.012, 455.008, -819.691, 462.944, -828.538, 471.64, -836.463, 481.15, -843.382, 491.528, -849.205, 502.827, -853.848, 515.101, -857.222, 521.455, -857.995, 527.737, -857.625, 533.947, -856.15, 540.082, -853.605, 546.143, -850.027, 552.128, -845.452, 558.037, -839.915, 563.868, -833.454, 575.296, -817.901, 586.403, -799.082, 607.628, -752.804, 645.919, -633.782, 678.282, -494.895, 739.29, -110.828, -2685.81, -163.022)
+polygon = PackedVector2Array(-2634.69, -426.105, -2636.1, -432.722, -2638.44, -450.577, -2638.85, -476.68, -2637.44, -491.888, -2634.49, -508.036, -2629.62, -524.749, -2622.5, -541.653, -2612.75, -558.375, -2606.79, -566.55, -2600.04, -574.539, -2592.45, -582.296, -2583.99, -589.773, -2574.6, -596.925, -2564.25, -603.703, -2540.47, -615.953, -2512.29, -626.15, -2497.6, -629.821, -2483.97, -631.853, -2471.32, -632.344, -2459.57, -631.392, -2448.66, -629.094, -2438.49, -625.547, -2428.99, -620.851, -2420.08, -615.101, -2411.7, -608.396, -2403.74, -600.834, -2388.84, -583.529, -2360.83, -542.927, -2331.09, -499.547, -2314, -478.768, -2294.6, -459.639, -2283.84, -450.938, -2272.28, -442.941, -2259.82, -435.748, -2246.39, -429.456, -2231.92, -424.163, -2216.33, -419.965, -2199.54, -416.961, -2181.46, -415.249, -2037.54, -412.535, -1905.77, -419.385, -1679.71, -452.468, -1655.66, -458.446, -1633.47, -465.921, -1612.88, -474.708, -1593.6, -484.624, -1557.93, -507.106, -1454.46, -582.534, -1413.95, -605.437, -1366.8, -624.77, -1341.22, -631.554, -1315.61, -635.081, -1289.88, -635.7, -1263.96, -633.761, -1211.26, -623.613, -1156.91, -607.433, -1040.81, -568.182, -977.857, -550.71, -910.829, -538.405, -874.749, -535.534, -836.143, -535.456, -753.566, -542.173, -582.412, -572.537, -432.725, -605.358, -376.981, -615.147, -355.817, -617.067, -347.154, -617.117, -339.862, -616.5, -333.468, -615.144, -327.436, -613.052, -321.738, -610.278, -316.348, -606.875, -311.24, -602.9, -306.388, -598.407, -297.341, -588.087, -266.068, -537.04, -250.407, -511.797, -241.829, -500.78, -237.26, -495.864, -232.47, -491.416, -227.431, -487.491, -222.117, -484.145, -216.502, -481.431, -210.559, -479.404, -204.262, -478.12, -197.584, -477.632, -190.499, -477.997, -182.98, -479.269, -173.579, -483.757, -165.092, -488.685, -157.461, -494.016, -150.632, -499.715, -144.548, -505.749, -139.155, -512.082, -134.396, -518.681, -130.217, -525.511, -123.372, -539.727, -118.176, -554.453, -104.985, -612.967, -101.362, -626.121, -96.72, -638.134, -93.8773, -643.627, -90.6132, -648.732, -86.8718, -653.413, -82.5975, -657.638, -77.7347, -661.371, -72.228, -664.577, -66.0215, -667.224, -59.0599, -669.275, -51.9515, -670.538, -45.3226, -670.879, -39.1445, -670.359, -36.2155, -669.795, -33.3883, -669.037, -28.0256, -666.973, -23.0273, -664.224, -18.3649, -660.852, -14.0097, -656.915, -9.93286, -652.473, -6.10529, -647.586, 0.915466, -636.71, 13.2266, -612.22, 24.7634, -587.247, 30.8162, -575.766, 37.3653, -565.589, 40.8976, -561.138, 44.6404, -557.191, 48.6221, -553.808, 52.8712, -551.048, 55.1054, -549.919, 57.4172, -548.969, 59.8104, -548.204, 62.2884, -547.632, 64.8548, -547.261, 67.5134, -547.096, 70.2675, -547.147, 73.1212, -547.421, 75.9672, -547.937, 78.6993, -548.705, 81.3224, -549.717, 83.8401, -550.964, 86.2566, -552.439, 88.5765, -554.133, 90.8042, -556.039, 92.9435, -558.147, 96.9745, -562.94, 100.703, -568.446, 107.392, -581.338, 128.885, -648.365, 140.284, -683.827, 147.101, -700.213, 155.024, -715.005, 159.486, -721.639, 164.327, -727.679, 169.581, -733.058, 175.282, -737.712, 181.464, -741.574, 184.746, -743.188, 188.161, -744.58, 191.714, -745.741, 195.407, -746.664, 203.237, -747.76, 207.219, -747.888, 211.037, -747.696, 214.696, -747.195, 218.201, -746.396, 221.556, -745.31, 224.768, -743.947, 227.841, -742.317, 230.78, -740.431, 233.591, -738.299, 236.278, -735.933, 241.303, -730.538, 245.894, -724.33, 250.094, -717.393, 257.482, -701.67, 263.793, -684.045, 284.801, -608.006, 290.628, -590.986, 297.339, -576.11, 301.127, -569.688, 305.259, -564.054, 307.467, -561.56, 309.775, -559.295, 312.19, -557.269, 314.717, -555.493, 317.359, -553.978, 320.123, -552.734, 323.014, -551.771, 326.037, -551.101, 329.197, -550.733, 332.499, -550.679, 335.948, -550.948, 339.548, -551.552, 343.142, -552.503, 346.57, -553.8, 349.839, -555.433, 352.956, -557.39, 355.927, -559.66, 358.759, -562.233, 361.46, -565.098, 364.034, -568.244, 368.833, -575.335, 373.212, -583.418, 380.919, -602.217, 405.64, -699.74, 420.347, -752.156, 429.792, -776.842, 441.203, -799.586, 447.78, -810.012, 455.01, -819.692, 462.946, -828.538, 471.642, -836.464, 481.152, -843.382, 491.53, -849.206, 502.829, -853.848, 515.103, -857.222, 521.457, -857.995, 527.739, -857.625, 533.948, -856.15, 540.084, -853.605, 546.145, -850.027, 552.13, -845.452, 558.038, -839.915, 563.87, -833.454, 575.297, -817.901, 586.405, -799.083, 607.63, -752.805, 645.921, -633.782, 678.283, -494.895, 739.291, -110.828, -2685.81, -163.021)
 
 [node name="SS2D_Shape_Closed" type="Node2D" parent="World/StaticBody2D"]
 texture_repeat = 2

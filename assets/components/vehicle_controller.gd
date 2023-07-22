@@ -14,4 +14,5 @@ func _input(_event):
 func _get_input_velocity() -> Vector2:
 	var input_velocity = Vector2.ZERO
 	input_velocity.x = Input.get_axis("player_left", "player_right")
+	input_velocity.y = Input.get_axis("player_down", "player_up")
 	return input_velocity

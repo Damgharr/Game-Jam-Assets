@@ -7,9 +7,9 @@ extends RigidBody2D
 func _physics_process(delta):
 	var velocity = self.angular_velocity
 	
-	if velocity > 10:
+	if velocity > 40:
 		_anim_player.play("moving")
-	elif velocity < -10:
+	elif velocity < -40:
 		_anim_player.play_backwards("moving")
 	else:
 		_anim_player.play("idle")
