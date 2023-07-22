@@ -10,18 +10,20 @@ var _velocity : Vector2 = Vector2.ZERO
 
 
 func _ready():
-    for wheel in get_children():
-        if wheel is PinJoint2D:
-            _wheels.append(wheel.get_node("Wheel"))
-    
-    print(_wheels)
+	for wheel in get_children():
+		if wheel is PinJoint2D:
+			_wheels.append(wheel.get_node("Wheel"))
+	
+	print(_wheels)
 
 
 func _physics_process(delta):
 
-    for wheel in _wheels:
-        wheel.apply_torque_impulse(clampf(_velocity.x * _speed * delta, -MAX_SPEED, MAX_SPEED))
+	self.apply_torque_impulse(_velocity.x * delta * MAX_SPEED * 30)
+
+	for wheel in _wheels:
+		wheel.apply_torque_impulse(clampf(_velocity.x * _speed * delta, -MAX_SPEED, MAX_SPEED))
 
 
 func apply_velocity(velocity : Vector2) -> void:
-    _velocity = velocity
+	_velocity = velocity

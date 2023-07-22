@@ -1,39 +1,73 @@
-[gd_scene load_steps=5 format=3 uid="uid://dsc2fu1jwya4w"]
+[gd_scene load_steps=8 format=3 uid="uid://dsc2fu1jwya4w"]
 
 [ext_resource type="Script" path="res://assets/prefabs/vehicle/vehicle.gd" id="1_rh71o"]
-[ext_resource type="Texture2D" uid="uid://cvu8acgiqqs1r" path="res://assets/sprites/Solid_white.png" id="2_b5dwj"]
+[ext_resource type="Texture2D" uid="uid://df8p4vvegr8tp" path="res://assets/sprites/vehicle/spr_bicylebody_spritesheet.png" id="2_mh25w"]
 [ext_resource type="PackedScene" uid="uid://bcwcqpwt1m3fl" path="res://assets/prefabs/vehicle/pref_wheel.tscn" id="2_ocxl8"]
+[ext_resource type="Texture2D" uid="uid://vtkqae6aktik" path="res://addons/PhysicsCarGameAssets/Images/Characters/Body.png" id="4_luqwi"]
+[ext_resource type="Texture2D" uid="uid://bis4plcdcepgl" path="res://addons/PhysicsCarGameAssets/Images/Characters/Head.png" id="4_uy7dv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gl8bl"]
-size = Vector2(64, 32)
+size = Vector2(64, 22)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_snrhp"]
+radius = 13.0
 
 [node name="Vehicle" type="RigidBody2D"]
-position = Vector2(122, 16)
+angular_damp_mode = 1
 script = ExtResource("1_rh71o")
-metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2.38419e-06, -9.53674e-07)
-scale = Vector2(0.32, 0.16)
-texture = ExtResource("2_b5dwj")
+position = Vector2(9.53674e-07, -4.76837e-07)
+scale = Vector2(1.45623, 1.07353)
+texture = ExtResource("2_mh25w")
+hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
 shape = SubResource("RectangleShape2D_gl8bl")
 
 [node name="WheelHolder" type="PinJoint2D" parent="."]
-position = Vector2(-32, 18)
+position = Vector2(-31, 12)
 node_a = NodePath("..")
 node_b = NodePath("Wheel")
+softness = 0.1
 metadata/_edit_group_ = true
 
 [node name="Wheel" parent="WheelHolder" instance=ExtResource("2_ocxl8")]
 inertia = 500.0
 
 [node name="WheelHolder2" type="PinJoint2D" parent="."]
-position = Vector2(32, 18)
+position = Vector2(29, 12)
 node_a = NodePath("..")
 node_b = NodePath("Wheel")
+softness = 0.1
 metadata/_edit_group_ = true
 
 [node name="Wheel" parent="WheelHolder2" instance=ExtResource("2_ocxl8")]
 inertia = 500.0
+
+[node name="Character" type="Node2D" parent="."]
+position = Vector2(-20, -13)
+metadata/_edit_group_ = true
+
+[node name="Neck" type="Sprite2D" parent="Character"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_luqwi")
+
+[node name="Head" type="RigidBody2D" parent="Character"]
+position = Vector2(0, -16)
+mass = 0.3
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Character/Head"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_uy7dv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Character/Head"]
+shape = SubResource("CircleShape2D_snrhp")
+
+[node name="HeadSpring" type="PinJoint2D" parent="Character/Head"]
+node_a = NodePath("..")
+node_b = NodePath("../../..")
+disable_collision = false
+softness = 5.0
