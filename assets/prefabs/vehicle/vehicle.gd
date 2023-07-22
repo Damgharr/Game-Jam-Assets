@@ -20,7 +20,7 @@ func _ready():
 
 func _physics_process(delta):
 
-	self.apply_torque_impulse(clampf(_velocity.x * delta * MAX_SPEED * MULTIPLIER_SPEED, -MAX_SPEED, MAX_SPEED))
+	self.apply_torque_impulse(_velocity.x * delta * MULTIPLIER_SPEED * 100)
 
 	for wheel in _wheels:
 		wheel.apply_torque_impulse(clampf(_velocity.y * _speed * delta * MULTIPLIER_SPEED, -MAX_SPEED, MAX_SPEED))

@@ -13,8 +13,8 @@ size = Vector2(64, 22)
 radius = 13.0
 
 [node name="Vehicle" type="RigidBody2D"]
-inertia = 50.0
-angular_damp_mode = 1
+inertia = 1000.0
+gravity_scale = 0.0
 script = ExtResource("1_rh71o")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
