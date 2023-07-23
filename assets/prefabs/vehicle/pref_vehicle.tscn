@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://dsc2fu1jwya4w"]
+[gd_scene load_steps=9 format=3 uid="uid://dsc2fu1jwya4w"]
 
 [ext_resource type="Script" path="res://assets/prefabs/vehicle/vehicle.gd" id="1_rh71o"]
 [ext_resource type="Texture2D" uid="uid://df8p4vvegr8tp" path="res://assets/sprites/vehicle/spr_bicylebody_spritesheet.png" id="2_mh25w"]
 [ext_resource type="PackedScene" uid="uid://bcwcqpwt1m3fl" path="res://assets/prefabs/vehicle/pref_wheel.tscn" id="2_ocxl8"]
+[ext_resource type="Script" path="res://assets/prefabs/vehicle/wheel_holder.gd" id="3_5qkn2"]
 [ext_resource type="Texture2D" uid="uid://vtkqae6aktik" path="res://addons/PhysicsCarGameAssets/Images/Characters/Body.png" id="4_luqwi"]
 [ext_resource type="Texture2D" uid="uid://bis4plcdcepgl" path="res://addons/PhysicsCarGameAssets/Images/Characters/Head.png" id="4_uy7dv"]
 
@@ -13,6 +14,7 @@ size = Vector2(64, 22)
 radius = 13.0
 
 [node name="Vehicle" type="RigidBody2D"]
+mass = 5.0
 inertia = 1000.0
 gravity_scale = 0.0
 script = ExtResource("1_rh71o")
@@ -27,26 +29,30 @@ hframes = 5
 position = Vector2(0, -4)
 shape = SubResource("RectangleShape2D_gl8bl")
 
-[node name="WheelHolder" type="PinJoint2D" parent="."]
+[node name="WheelHolder" type="PinJoint2D" parent="." node_paths=PackedStringArray("_wheel")]
 position = Vector2(-31, 12)
 node_a = NodePath("..")
 node_b = NodePath("Wheel")
 softness = 0.1
+script = ExtResource("3_5qkn2")
+_wheel = NodePath("Wheel")
 metadata/_edit_group_ = true
 
 [node name="Wheel" parent="WheelHolder" instance=ExtResource("2_ocxl8")]
 
-[node name="WheelHolder2" type="PinJoint2D" parent="."]
+[node name="WheelHolder2" type="PinJoint2D" parent="." node_paths=PackedStringArray("_wheel")]
 position = Vector2(29, 12)
 node_a = NodePath("..")
 node_b = NodePath("Wheel")
 softness = 0.1
+script = ExtResource("3_5qkn2")
+_wheel = NodePath("Wheel")
 metadata/_edit_group_ = true
 
 [node name="Wheel" parent="WheelHolder2" instance=ExtResource("2_ocxl8")]
 
 [node name="Character" type="Node2D" parent="."]
-position = Vector2(-20, -13)
+position = Vector2(-20, -9)
 metadata/_edit_group_ = true
 
 [node name="Neck" type="Sprite2D" parent="Character"]

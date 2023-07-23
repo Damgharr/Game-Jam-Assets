@@ -4,11 +4,14 @@ extends Node2D
 
 @export var _vehicle : Vehicle
 
+var is_active : bool = true
+
 
 func _input(_event):
-	var input_velocity : Vector2 = _get_input_velocity()
+	if is_active == true:
+		var input_velocity : Vector2 = _get_input_velocity()
 
-	_vehicle.apply_velocity(input_velocity)
+		_vehicle.apply_velocity(input_velocity)
 
 
 func _get_input_velocity() -> Vector2:

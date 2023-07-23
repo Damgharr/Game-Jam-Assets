@@ -1,8 +1,8 @@
 class_name Vehicle
 extends RigidBody2D
 
-const MAX_SPEED = 1024
-const MULTIPLIER_SPEED = 1000
+const MAX_SPEED = 512
+const MULTIPLIER_SPEED = 1024
 
 @export var _speed : float = 100
 
@@ -10,10 +10,12 @@ var _wheels : Array = []
 var _velocity : Vector2 = Vector2.ZERO
 
 
+#change to init()
 func _ready():
-	for wheel in get_children():
-		if wheel is PinJoint2D:
-			_wheels.append(wheel.get_node("Wheel"))
+	for wheel_holder in get_children():
+		if wheel_holder is WheelHolder:
+			wheel_holder.init(self)
+			_wheels.append(wheel_holder.get_wheel())
 	
 	print(_wheels)
 

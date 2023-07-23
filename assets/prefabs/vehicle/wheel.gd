@@ -4,7 +4,7 @@ extends RigidBody2D
 @onready var _anim_player = $AnimationPlayer
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var velocity = self.angular_velocity
 	
 	if velocity > 40:
