@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://d03x55lh5gfph"]
+
+[ext_resource type="Texture2D" uid="uid://ckniukx5q66qh" path="res://assets/sprites/ObstaclesAndEnemies/MissileSpriteSheet.png" id="1_md6y3"]
+[ext_resource type="Script" path="res://assets/prefabs/ObstaclesAndEnemies/tracking_missile.gd" id="1_yyodn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgy4v"]
+atlas = ExtResource("1_md6y3")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0er5e"]
+atlas = ExtResource("1_md6y3")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tk6f6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wgy4v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0er5e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1foex"]
+size = Vector2(20, 90)
+
+[node name="TrackingMissile" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_yyodn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_tk6f6")
+frame_progress = 0.466341
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_1foex")
