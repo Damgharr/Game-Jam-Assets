@@ -26,17 +26,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1foex"]
-size = Vector2(20, 90)
+size = Vector2(90, 20)
 
 [node name="TrackingMissile" type="RigidBody2D"]
+inertia = 10.0
 gravity_scale = 0.0
+can_sleep = false
 script = ExtResource("1_yyodn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 1.5708
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_tk6f6")
 frame_progress = 0.466341
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -16)
 shape = SubResource("RectangleShape2D_1foex")

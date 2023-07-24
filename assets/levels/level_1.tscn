@@ -326,5 +326,7 @@ shape_material = SubResource("Resource_rymfv")
 collision_polygon_node_path = NodePath("../CollisionPolygon2D")
 
 [node name="TrackingMissile" parent="." instance=ExtResource("14_f8jof")]
+position = Vector2(-5, 0)
 collision_layer = 2
 collision_mask = 2
+inertia = 0.0
