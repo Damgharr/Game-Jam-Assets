@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://d03x55lh5gfph"]
+[gd_scene load_steps=7 format=3 uid="uid://bvpxkqp744l6m"]
 
 [ext_resource type="Texture2D" uid="uid://ckniukx5q66qh" path="res://assets/sprites/ObstaclesAndEnemies/MissileSpriteSheet.png" id="1_md6y3"]
-[ext_resource type="Script" path="res://assets/prefabs/ObstaclesAndEnemies/tracking_missile.gd" id="1_yyodn"]
+[ext_resource type="Script" path="res://assets/prefabs/obstacles/tracking_missile.gd" id="1_yyodn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wgy4v"]
 atlas = ExtResource("1_md6y3")
@@ -11,7 +11,7 @@ region = Rect2(0, 0, 64, 64)
 atlas = ExtResource("1_md6y3")
 region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_tk6f6"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_k3lna"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -25,20 +25,18 @@ animations = [{
 "speed": 15.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1foex"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7tug"]
 size = Vector2(90, 20)
 
-[node name="TrackingMissile" type="RigidBody2D"]
-inertia = 10.0
-gravity_scale = 0.0
-can_sleep = false
+[node name="TrackingMissile" type="Area2D"]
 script = ExtResource("1_yyodn")
+_drag_factor = 0.7
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 rotation = 1.5708
 scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_tk6f6")
-frame_progress = 0.466341
+sprite_frames = SubResource("SpriteFrames_k3lna")
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_1foex")
+shape = SubResource("RectangleShape2D_d7tug")
